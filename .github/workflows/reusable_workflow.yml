@@ -1,0 +1,61 @@
+name: Reusable_workflow
+on:
+  workflow_call:
+    inputs:
+      parameter1:
+        required: true
+        type: string
+      parameter2:
+        required: true
+        type: string
+      parameter3:
+        required: true
+        type: string
+      parameter4:
+        required: true
+        type: string
+      parameter5:
+        required: true
+        type: string
+      parameter6:
+        required: true
+        type: string
+      parameter7:
+        required: true
+        type: string
+      parameter8:
+        required: true
+        type: string
+      parameter9:
+        required: true
+        type: string
+      parameter10:
+        required: true
+        type: string
+      parameter11:
+        required: true
+        type: string
+      parameter12:
+        required: true
+        type: string
+        
+jobs:
+  my-job:
+    name: My Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test Vars
+        run: |
+          echo '${{ inputs.parameter1 }}'
+          echo '${{ inputs.parameter2 }}'
+          echo '${{ inputs.parameter3 }}'
+          echo '${{ inputs.parameter4 }}'
+          echo '${{ inputs.parameter5 }}'
+          echo '${{ inputs.parameter6 }}'
+          echo '${{ inputs.parameter7 }}'
+          echo '${{ inputs.parameter8 }}'
+          echo '${{ inputs.parameter9 }}'
+          echo '${{ inputs.parameter10 }}'
+          echo '${{ inputs.parameter11 }}'
+          echo '${{ inputs.parameter12 }}'
+         
